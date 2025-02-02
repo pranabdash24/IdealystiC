@@ -21,6 +21,9 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
@@ -33,27 +36,124 @@
         </div>
     </section>
 
+    <!-- Mission/Vision Section -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mv-card reveal">
+                <i class="fas fa-bullseye"></i>
+                <h3>Our Vision</h3>
+                <p>To empower businesses, individuals, and communities with tailored solutions that bridge the gap between potential and performance.</p>
+                <span class="value-badge">Sustainability</span>
+                <span class="value-badge">Impact</span>
+            </div>
+            <div class="mv-card reveal">
+                <i class="fas fa-rocket"></i>
+                <h3>Our Mission</h3>
+                <p>Delivering transformative consulting services across education, IT, business, and rural development for sustainable impact.</p>
+                <span class="value-badge">Innovation</span>
+                <span class="value-badge">Inclusivity</span>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2>Our Verticals</h2>
+            <h2>Our Strategic Verticals</h2>
             <div class="service-grid">
-                <div class="service-card">
+                <div class="service-card reveal">
                     <i class="fas fa-graduation-cap"></i>
-                    <h3>EdVision</h3>
+                    <h3>Ideaslytic EdVision</h3>
                     <p>Revolutionizing education with data-driven strategies.</p>
+                    <div class="value-badge"><a href="edvision-page.html">Analytics Driven </a></div>
                 </div>
-                <div class="service-card">
+                <div class="service-card reveal">
                     <i class="fas fa-microchip"></i>
-                    <h3>TechEdge</h3>
+                    <h3>Ideaslytic TechEdge</h3>
                     <p>Cutting-edge IT solutions for competitive advantage.</p>
+                    <div class="value-badge"><a href="techedge-page.html">Future Ready</a></div>
                 </div>
-                <div class="service-card">
+                <div class="service-card reveal">
                     <i class="fas fa-chart-line"></i>
-                    <h3>BizCatalyst</h3>
+                    <h3>Ideaslytic BizCatalyst</h3>
                     <p>Transformative business strategy and analytics.</p>
+                    <div class="value-badge"><a href="bizcatalyst-page.html">Growth Focused</a></div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="reveal">About Us</h2>
+            <p class="reveal">Ideaslytic is a consulting firm dedicated to driving innovation and impact through tailored solutions. Our team of experts leverages data-driven strategies to empower growth and success across various industries.</p>
+            <div class="team">
+                <div class="team-member reveal">
+                    <img src="assets/team1.jpg" alt="Team Member">
+                    <h3>Nihar Ranjan Patra</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member reveal">
+                    <img src="assets/team2.jpg" alt="Team Member">
+                    <h3>Dr. Bobby Patra</h3>
+                    <p>Co-Founder & CFO</p>
+                </div>
+                <div class="team-member reveal">
+                    <img src="assets/team3.jpg" alt="Team Member">
+                    <h3>Mansha Patra</h3>
+                    <p>Co-Founder & CMO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="reveal">What Our Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal">
+                    <p>"Ideaslytic transformed our business with their innovative solutions. Highly recommend!"</p>
+                    <h3>Michael Brown</h3>
+                    <p>CEO, TechCorp</p>
+                    <div class="value-badge">Verified Client</div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <p>"Their expertise in data-driven strategies is unparalleled. Our growth has been phenomenal."</p>
+                    <h3>Sarah Wilson</h3>
+                    <p>Founder, EduInnovate</p>
+                    <div class="value-badge">Verified Client</div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <p>"Professional, knowledgeable, and results-oriented. Ideaslytic is our go-to consulting firm."</p>
+                    <h3>David Lee</h3>
+                    <p>COO, BizSolutions</p>
+                    <div class="value-badge">Verified Client</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="reveal">Contact Us</h2>
+            <form action="submit_form.php" method="post" class="reveal">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
         </div>
     </section>
 
