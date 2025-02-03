@@ -9,8 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-circle"></div>
+        <img src="assets/logo.png" alt="Ideaslytic Logo" class="loader-logo">
+    </div>
 
-</div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -29,21 +33,21 @@
         </div>
     </nav>
 
-<!-- Update Hero Section -->
-<section id="home" class="hero">
-    <div class="video-container">
-        <video autoplay muted loop id="hero-video">
-            <source src="assets/hero-bg.mp4" type="video/mp4">
-            <source src="assets/hero-bg.webm" type="video/webm">
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
-    <div class="container">
-        <h1>Where Innovation Meets Impact</h1>
-        <p class="tagline">Empowering growth through tailored consulting solutions</p>
-        <a href="#services" class="cta-button">Explore Our Solutions</a>
-    </div>
-</section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="video-container">
+            <video autoplay muted loop id="hero-video">
+                <source src="assets/hero-bg.mp4" type="video/mp4">
+                <source src="assets/hero-bg.webm" type="video/webm">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <div class="container">
+            <h1>Where Innovation Meets Impact</h1>
+            <p class="tagline">Empowering growth through tailored consulting solutions</p>
+            <a href="#services" class="cta-button">Explore Our Solutions</a>
+        </div>
+    </section>
 
     <!-- Mission/Vision Section -->
     <section class="mission-vision">
@@ -74,19 +78,19 @@
                     <i class="fas fa-graduation-cap"></i>
                     <h3>Ideaslytic EdVision</h3>
                     <p>Revolutionizing education with data-driven strategies.</p>
-                    <div class="value-badge"><a href="edvision-page.html">Analytics Driven </a></div>
+                    <div class="value-badge"><a href="edvision-page.html" style="text-decoration: none; color: inherit;">Analytics Driven</a></div>
                 </div>
                 <div class="service-card reveal">
                     <i class="fas fa-microchip"></i>
                     <h3>Ideaslytic TechEdge</h3>
                     <p>Cutting-edge IT solutions for competitive advantage.</p>
-                    <div class="value-badge"><a href="techedge-page.html">Future Ready</a></div>
+                    <div class="value-badge"><a href="techedge-page.html" style="text-decoration: none; color: inherit;">Future Ready</a></div>
                 </div>
                 <div class="service-card reveal">
                     <i class="fas fa-chart-line"></i>
                     <h3>Ideaslytic BizCatalyst</h3>
                     <p>Transformative business strategy and analytics.</p>
-                    <div class="value-badge"><a href="bizcatalyst-page.html">Growth Focused</a></div>
+                    <div class="value-badge"><a href="bizcatalyst-page.html" style="text-decoration: none; color: inherit;">Growth Focused</a></div>
                 </div>
             </div>
         </div>
@@ -143,7 +147,6 @@
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -166,6 +169,7 @@
         </div>
     </section>
 
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -178,12 +182,11 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="scripts.js"></script>
-    <!-- Add before closing body -->
-<button id="back-to-top" class="hidden">
-    <i class="fas fa-arrow-up"></i>
-</button>
-<!-- Add before closing body tag -->
-<div class="custom-cursor cursor-default"></div>
 </body>
-</html>
+</html></button>

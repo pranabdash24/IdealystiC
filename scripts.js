@@ -40,15 +40,18 @@ document.querySelectorAll('.nav-links a').forEach(item => {
     });
 });
 
-// Initialize animations
+// Initialize animations and vertical-specific features
 document.addEventListener('DOMContentLoaded', () => {
     reveal();
     // Add reveal class to all animated elements
     document.querySelectorAll('.service-card, .mv-card, .testimonial-card').forEach(el => {
         el.classList.add('reveal');
     });
+
+    // Vertical-specific animations
+    initVerticalAnimations();
 });
-// Vertical-specific animations
+
 function initVerticalAnimations() {
     // TechEdge glitch effect
     document.querySelectorAll('.cyber-text').forEach(element => {
@@ -78,16 +81,11 @@ function initVerticalAnimations() {
     });
 }
 
-// Initialize vertical-specific features
-document.addEventListener('DOMContentLoaded', () => {
-    initVerticalAnimations();
-});
-// Add to scripts.js
 // Back to Top Button
 const backToTopButton = document.getElementById('back-to-top');
 
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 300) {
+    if (window.scrollY > 300) {
         backToTopButton.classList.add('visible');
     } else {
         backToTopButton.classList.remove('visible');
@@ -100,7 +98,7 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-// Add to scripts.js
+
 // Page Loader
 window.addEventListener('load', () => {
     const loader = document.querySelector('.loader');
