@@ -82,3 +82,30 @@ function initVerticalAnimations() {
 document.addEventListener('DOMContentLoaded', () => {
     initVerticalAnimations();
 });
+// Add to scripts.js
+// Back to Top Button
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('visible');
+    } else {
+        backToTopButton.classList.remove('visible');
+    }
+});
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+// Add to scripts.js
+// Page Loader
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    loader.style.opacity = '0';
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 500);
+});

@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+</div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -27,14 +29,21 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>Where Innovation Meets Impact</h1>
-            <p class="tagline">Empowering growth through tailored consulting solutions</p>
-            <a href="#services" class="cta-button">Explore Our Solutions</a>
-        </div>
-    </section>
+<!-- Update Hero Section -->
+<section id="home" class="hero">
+    <div class="video-container">
+        <video autoplay muted loop id="hero-video">
+            <source src="assets/hero-bg.mp4" type="video/mp4">
+            <source src="assets/hero-video.webm" type="video/webm">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <div class="container">
+        <h1>Where Innovation Meets Impact</h1>
+        <p class="tagline">Empowering growth through tailored consulting solutions</p>
+        <a href="#services" class="cta-button">Explore Our Solutions</a>
+    </div>
+</section>
 
     <!-- Mission/Vision Section -->
     <section class="mission-vision">
@@ -170,5 +179,11 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <!-- Add before closing body -->
+<button id="back-to-top" class="hidden">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<!-- Add before closing body tag -->
+<div class="custom-cursor cursor-default"></div>
 </body>
 </html>

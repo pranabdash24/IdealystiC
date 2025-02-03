@@ -73,10 +73,26 @@ h1, h2, h3 {
     font-size: 2rem;
     cursor: pointer;
 }
+/* Video Background Styles */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
 
 .hero {
-    background: linear-gradient(rgba(10, 35, 66, 0.9), rgba(29, 120, 116, 0.8)),
-                url('assets/hero-bg.jpg') center/cover;
+    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -84,8 +100,10 @@ h1, h2, h3 {
     text-align: center;
     color: white;
     padding-top: 60px;
-    position: relative;
-    overflow: hidden;
+    background: linear-gradient(
+        rgba(10, 35, 66, 0.7), 
+        rgba(29, 120, 116, 0.6)
+    );
 }
 
 .hero h1 {
@@ -504,4 +522,144 @@ h1, h2, h3 {
     .biz-hero {
         padding: 4rem 0;
     }
+}
+/* Custom Cursor */
+.custom-cursor {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.3s ease;
+}
+
+.cursor-default {
+    width: 40px;  /* Adjust size here */
+    height: 40px; /* Adjust size here */
+    background: url('assets/Violet\ Flower\ Gradient--cursor--SweezyCursors.png') no-repeat center center;
+    background-size: contain;
+}
+
+.cursor-pointer {
+    width: 50px;  /* Adjust size here */
+    height: 50px; /* Adjust size here */
+    background: url('assets/Violet\ Flower\ Gradient--pointer--SweezyCursors.png') no-repeat center center;
+    background-size: contain;
+}
+.nav-links {
+    position: relative;
+}
+
+.nav-links li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-orange);
+    transition: width 0.3s ease;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: var(--dark-gray);
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:valid ~ label {
+    top: -1rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--primary-green);
+}
+.social-links a {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.social-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: var(--accent-orange);
+    transition: width 0.3s ease;
+}
+
+.social-links a:hover::after {
+    width: 100%;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--accent-orange);
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s;
+}
+
+.loader-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgba(255,255,255,0.2);
+    border-top-color: var(--accent-orange);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.loader-logo {
+    width: 60px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(0.9); }
 }
