@@ -1,151 +1,381 @@
 <!DOCTYPE html>
-<html lang="en" class="techedge-page">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ideaslytic TechEdge - Technology Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>TechEdge | Advanced Technology Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/techedge.css">
 </head>
-<body>
-    <!-- Loader -->
+<body class="techedge-page">
+    <!-- Loading Animation -->
     <div class="loader">
         <div class="loader-circle"></div>
-        <img src="assets/logo.png" alt="Ideaslytic Logo" class="loader-logo">
     </div>
 
-    <!-- Back to Top Button -->
+    <!-- Particle Background -->
+    <div class="particle-container" id="particles-js"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/techedge-logo.png" alt="TechEdge">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#innovations">Innovations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#contact" class="nav-btn">Get Started</a>
+                    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="tech-hero">
+            <div class="container">
+                <h1>
+                    Pioneering Tomorrow's<br>Technology Today
+                    <span>Pioneering Tomorrow's<br>Technology Today</span>
+                    <span>Pioneering Tomorrow's<br>Technology Today</span>
+                </h1>
+                <p class="tagline">Empowering businesses with cutting-edge solutions in AI, Cloud, and Cybersecurity</p>
+                <div class="hero-cta">
+                    <a href="#solutions" class="cta-button primary">Explore Solutions</a>
+                    <a href="#contact" class="cta-button secondary">Schedule Consultation</a>
+                </div>
+                <div class="tech-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Enterprise Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Tech Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Grid -->
+        <section id="solutions" class="tech-solutions">
+            <div class="container">
+                <h2>Core Solutions</h2>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Intelligent automation and predictive analytics for business optimization</p>
+                        <ul class="tech-features">
+                            <li><i class="fas fa-check"></i> Predictive Analytics</li>
+                            <li><i class="fas fa-check"></i> Neural Networks</li>
+                            <li><i class="fas fa-check"></i> Deep Learning</li>
+                        </ul>
+                        <a href="#contact" class="tech-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="card-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Solutions</h3>
+                        <p>Scalable cloud infrastructure and migration services</p>
+                        <ul class="tech-features">
+                            <li><i class="fas fa-check"></i> AWS & Azure</li>
+                            <li><i class="fas fa-check"></i> Cloud Migration</li>
+                            <li><i class="fas fa-check"></i> DevOps</li>
+                        </ul>
+                        <a href="#contact" class="tech-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>Advanced threat protection and security infrastructure</p>
+                        <ul class="tech-features">
+                            <li><i class="fas fa-check"></i> Threat Detection</li>
+                            <li><i class="fas fa-check"></i> Zero Trust</li>
+                            <li><i class="fas fa-check"></i> Compliance</li>
+                        </ul>
+                        <a href="#contact" class="tech-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="tech-services">
+            <div class="container">
+                <div class="section-header glitch-text">
+                    <span class="glitch-text-item">&lt;Our_Services/&gt;</span>
+                </div>
+                <div class="service-grid">
+                    <div class="tech-service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-tag">[DEV]</div>
+                            <h3>Custom Development</h3>
+                            <p>Crafting scalable solutions with cutting-edge tech stack</p>
+                            <ul class="service-features">
+                                <li><span class="feature-bullet">▹</span> Microservices Architecture</li>
+                                <li><span class="feature-bullet">▹</span> API Development</li>
+                                <li><span class="feature-bullet">▹</span> Cloud-Native Apps</li>
+                            </ul>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-value">99.9%</span>
+                                    <span class="stat-label">Uptime</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">24/7</span>
+                                    <span class="stat-label">Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-tag">[INFRA]</div>
+                            <h3>IT Infrastructure</h3>
+                            <p>Building robust and scalable tech infrastructure</p>
+                            <ul class="service-features">
+                                <li><span class="feature-bullet">▹</span> Cloud Architecture</li>
+                                <li><span class="feature-bullet">▹</span> DevOps Integration</li>
+                                <li><span class="feature-bullet">▹</span> Security Framework</li>
+                            </ul>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-value">100+</span>
+                                    <span class="stat-label">Deployments</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">5x</span>
+                                    <span class="stat-label">Faster</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-tag">[TRANSFORM]</div>
+                            <h3>Digital Transformation</h3>
+                            <p>Revolutionizing businesses through digital innovation</p>
+                            <ul class="service-features">
+                                <li><span class="feature-bullet">▹</span> Process Automation</li>
+                                <li><span class="feature-bullet">▹</span> Data Analytics</li>
+                                <li><span class="feature-bullet">▹</span> AI Integration</li>
+                            </ul>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-value">300%</span>
+                                    <span class="stat-label">ROI</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">10x</span>
+                                    <span class="stat-label">Growth</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Innovations Section -->
+        <section id="innovations" class="tech-innovations">
+            <div class="container">
+                <div class="section-header glitch-text">
+                    <span class="glitch-text-item">&lt;Latest_Innovations/&gt;</span>
+                </div>
+                <div class="innovation-grid">
+                    <div class="innovation-card">
+                        <div class="innovation-content">
+                            <div class="innovation-tag">[ QUANTUM ]</div>
+                            <div class="innovation-header">
+                                <h3>Quantum Computing</h3>
+                                <div class="tech-progress">
+                                    <div class="progress-bar" style="--progress: 85%"></div>
+                                    <span class="progress-text">Development: 85%</span>
+                                </div>
+                            </div>
+                            <p>Next-gen quantum algorithms for complex computations</p>
+                            <div class="tech-stack">
+                                <span class="stack-item">Qiskit</span>
+                                <span class="stack-item">Q#</span>
+                                <span class="stack-item">Quantum ML</span>
+                            </div>
+                        </div>
+                        <div class="innovation-status">
+                            <span class="status-dot"></span>
+                            <span class="tech-tag">New</span>
+                            <h3>Quantum Computing Solutions</h3>
+                            <p>Exploring quantum algorithms for complex problem-solving</p>
+                        </div>
+                    </div>
+                    <div class="innovation-card">
+                        <div class="innovation-content">
+                            <div class="innovation-tag">[ EDGE ]</div>
+                            <div class="innovation-header">
+                                <h3>Edge Computing</h3>
+                                <div class="tech-progress">
+                                    <div class="progress-bar" style="--progress: 75%"></div>
+                                    <span class="progress-text">Development: 75%</span>
+                                </div>
+                            </div>
+                            <p>Distributed computing for real-time data processing</p>
+                            <div class="tech-stack">
+                                <span class="stack-item">IoT</span>
+                                <span class="stack-item">5G</span>
+                                <span class="stack-item">Edge ML</span>
+                            </div>
+                        </div>
+                        <div class="innovation-status">
+                            <span class="status-dot active"></span>
+                            <span class="tech-tag">Trending</span>
+                            <h3>Edge Computing Solutions</h3>
+                            <p>Real-time data processing at network edges</p>
+                        </div>
+                    </div>
+                    <div class="innovation-card">
+                        <div class="innovation-content">
+                            <div class="innovation-tag">[ BLOCKCHAIN ]</div>
+                            <div class="innovation-header">
+                                <h3>Blockchain Enterprise</h3>
+                                <div class="tech-progress">
+                                    <div class="progress-bar" style="--progress: 90%"></div>
+                                    <span class="progress-text">Development: 90%</span>
+                                </div>
+                            </div>
+                            <p>Secure, decentralized business solutions</p>
+                            <div class="tech-stack">
+                                <span class="stack-item">Ethereum</span>
+                                <span class="stack-item">Smart Contracts</span>
+                                <span class="stack-item">DeFi</span>
+                            </div>
+                        </div>
+                        <div class="innovation-status">
+                            <span class="status-dot active"></span>
+                            <span class="tech-tag">Featured</span>
+                            <h3>Blockchain Solutions</h3>
+                            <p>Enterprise-grade blockchain implementation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="tech-contact">
+            <div class="container">
+                <h2>Start Your Digital Journey</h2>
+                <div class="tech-contact-form">
+                    <form>
+                        <div class="tech-form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="tech-form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="tech-form-group">
+                            <select required>
+                                <option value="">Select Service</option>
+                                <option value="ai">AI & ML Solutions</option>
+                                <option value="cloud">Cloud Services</option>
+                                <option value="security">Cybersecurity</option>
+                                <option value="development">Custom Development</option>
+                            </select>
+                        </div>
+                        <div class="tech-form-group">
+                            <textarea placeholder="Project Details" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="tech-submit">Get Started</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="tech-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h3>TechEdge</h3>
+                        <p>Pioneering digital transformation with cutting-edge technology solutions.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="#solutions">AI & ML</a></li>
+                            <li><a href="#solutions">Cloud Services</a></li>
+                            <li><a href="#solutions">Cybersecurity</a></li>
+                            <li><a href="#services">Custom Development</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                            <li><a href="#blog">Tech Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#docs">Documentation</a></li>
+                            <li><a href="#api">API Reference</a></li>
+                            <li><a href="#status">System Status</a></li>
+                            <li><a href="#support">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 TechEdge. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
     <button id="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.png" alt="TechEdge Logo">
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-
-    <section class="tech-hero">
-        <div class="container">
-            <div class="cyber-header reveal">
-                <h1>Next-Gen <span class="cyber-text">Tech</span> Solutions</h1>
-                <div class="binary-animation"></div>
-            </div>
-        </div>
-            <div class="tech-grid">
-                <div class="tech-card reveal">
-                    <div class="hologram-effect">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>AI & Automation</h3>
-                    <p>Enterprise-grade intelligent systems</p>
-                </div>
-                <div class="tech-card reveal">
-                    <div class="hologram-effect">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Cyber Security</h3>
-                    <p>Advanced threat protection systems</p>
-                </div>
-                <div class="tech-card reveal">
-                    <div class="hologram-effect">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                    </div>
-                    <h3>Cloud Solutions</h3>
-                    <p>Scalable infrastructure solutions</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="service-card reveal">
-                    <i class="fas fa-network-wired"></i>
-                    <h3>Network Management</h3>
-                    <p>Optimized and secure network solutions</p>
-                </div>
-                <div class="service-card reveal">
-                    <i class="fas fa-database"></i>
-                    <h3>Data Analytics</h3>
-                    <p>Data-driven insights for better decision making</p>
-                </div>
-                <div class="service-card reveal">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Mobile Development</h3>
-                    <p>Innovative mobile applications for all platforms</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-us">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>At Ideaslytic TechEdge, we are committed to providing cutting-edge technology solutions that drive business success. Our team of experts specializes in AI, cyber security, cloud solutions, and more.</p>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have questions or need a custom solution? Get in touch with us!</p>
-            <form action="contact-form-handler.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Ideaslytic TechEdge. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <script>
-        // Hide loader when page is fully loaded
-        window.addEventListener('load', function() {
-            document.querySelector('.loader').classList.add('hidden');
-        });
-
-        // Show "back to top" button when scrolling down
-        const backToTopBtn = document.getElementById('back-to-top');
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 200) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
-        });
-
-        // Scroll to top when "back to top" button is clicked
-        backToTopBtn.addEventListener('click', function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

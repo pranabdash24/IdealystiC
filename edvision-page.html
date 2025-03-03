@@ -3,132 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ideaslytic EdVision - Educational Transformation</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>EdVision | Modern Learning Platform</title>
+    <link rel="stylesheet" href="styles/edvision.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="#" class="logo">
                 <img src="assets/logo.png" alt="EdVision Logo">
             </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+            <div class="nav-wrapper">
+                <ul class="nav-links">
+                    <li><a href="#featured-courses">Courses</a></li>
+                    <li><a href="#learning-paths">Learning Paths</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#cta">Get Started</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#cta" class="nav-btn secondary">Sign Up</a>
+                    <a href="#cta" class="login-btn">
+                        Login
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
     <section class="edu-hero">
         <div class="container">
-            <h1 class="reveal">Transforming Education Through Innovation</h1>
-            <p class="tagline reveal">Bridging the gap between pedagogy and technology</p>
-            <div class="hero-grid">
-                <div class="hero-card reveal">
-                    <i class="fas fa-brain"></i>
-                    <h3>Cognitive Learning Systems</h3>
-                    <p>AI-powered adaptive learning platforms</p>
-                </div>
-                <div class="hero-card reveal">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h3>Teacher Empowerment</h3>
-                    <p>Professional development programs</p>
-                </div>
-                <div class="hero-card reveal">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Institutional Analytics</h3>
-                    <p>Data-driven decision making</p>
-                </div>
+            <h1 class="reveal">Your Journey to Excellence Starts Here</h1>
+            <p class="tagline reveal">Discover a world of interactive learning with expert-led courses, hands-on projects, and a supportive global community</p>
+            <div class="hero-cta reveal">
+                <a href="#featured-courses" class="cta-button primary">Explore Courses</a>
+                <a href="#cta" class="cta-button secondary">Start Free Trial</a>
             </div>
-        </div>
-    </section>
+            <div class="hero-stats reveal">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Courses</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50k+</span>
+                    <span class="stat-label">Students</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Success Rate</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="featured-courses" class="featured-courses">
         <div class="container">
-            <h2 class="reveal">About EdVision</h2>
-            <p class="reveal">EdVision is dedicated to transforming education through innovative solutions. Our mission is to bridge the gap between traditional pedagogy and modern technology, ensuring that every student has access to the best learning tools available.</p>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="reveal">Our Services</h2>
-            <div class="service-grid">
-                <div class="service-card reveal">
-                    <i class="fas fa-robot"></i>
-                    <h3>AI Tutoring</h3>
-                    <p>Personalized tutoring powered by artificial intelligence.</p>
+            <h2 class="section-title reveal">Featured Courses</h2>
+            <p class="section-subtitle reveal">Start your learning journey with our most popular courses</p>
+            <div class="course-grid">
+                <div class="course-card reveal">
+                    <div class="course-image">
+                        <img src="assets/courses/web-dev.jpg" alt="Web Development">
+                        <span class="course-badge">Bestseller</span>
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Development</span>
+                        <h3>Full-Stack Web Development</h3>
+                        <p>Master modern web development with React, Node.js, and MongoDB</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 12 weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 2.5k students</span>
+                        </div>
+                        <a href="#learning-paths" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>EdTech Solutions</h3>
-                    <p>Custom software solutions for educational institutions.</p>
+                
+                <div class="course-card reveal">
+                    <div class="course-image">
+                        <img src="assets/courses/data-science.jpg" alt="Data Science">
+                        <span class="course-badge">Hot & New</span>
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Data Science</span>
+                        <h3>Data Science & Analytics</h3>
+                        <p>Master Python, Machine Learning, and Statistical Analysis</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 10 weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 1.8k students</span>
+                        </div>
+                        <a href="#learning-paths" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <i class="fas fa-user-graduate"></i>
-                    <h3>Student Success Programs</h3>
-                    <p>Programs designed to enhance student outcomes.</p>
-                </div>
-                <div class="service-card reveal">
-                    <i class="fas fa-network-wired"></i>
-                    <h3>Network Infrastructure</h3>
-                    <p>Robust and scalable network solutions for schools.</p>
+                
+                <div class="course-card reveal">
+                    <div class="course-image">
+                        <img src="assets/courses/ui-design.jpg" alt="UI/UX Design">
+                        <span class="course-badge">Popular</span>
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Design</span>
+                        <h3>UI/UX Design Mastery</h3>
+                        <p>Learn Figma, Design Systems, and User Research</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 3k students</span>
+                        </div>
+                        <a href="#learning-paths" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="contact" class="contact">
+
+    <section id="learning-paths" class="learning-paths">
         <div class="container">
-            <h2 class="reveal">Contact Us</h2>
-            <form class="reveal">
-                <div class="form-group">
-                    <input type="text" id="name" required>
-                    <label for="name">Name</label>
+            <h2 class="section-title reveal">Learning Paths</h2>
+            <p class="section-subtitle reveal">Structured curricula designed to help you achieve your career goals</p>
+            <div class="path-grid">
+                <div class="path-card reveal">
+                    <div class="path-header">
+                        <div class="path-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span class="path-level">Beginner to Advanced</span>
+                    </div>
+                    <h3>Software Development</h3>
+                    <p class="path-description">Master the art of software development from ground up to advanced concepts</p>
+                    <div class="path-stats">
+                        <span><i class="fas fa-clock"></i> 6 months</span>
+                        <span><i class="fas fa-book"></i> 12 courses</span>
+                    </div>
+                    <ul class="path-features">
+                        <li><i class="fas fa-check-circle"></i> Web Development Fundamentals</li>
+                        <li><i class="fas fa-check-circle"></i> Backend Technologies</li>
+                        <li><i class="fas fa-check-circle"></i> Cloud Computing</li>
+                        <li><i class="fas fa-check-circle"></i> DevOps Practices</li>
+                    </ul>
+                    <div class="path-footer">
+                        <a href="#cta" class="path-btn">Start This Path <i class="fas fa-arrow-right"></i></a>
+                        <span class="path-price">₹49,999</span>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" id="email" required>
-                    <label for="email">Email</label>
+
+                <div class="path-card reveal">
+                    <div class="path-header">
+                        <div class="path-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <span class="path-level">Intermediate to Expert</span>
+                    </div>
+                    <h3>Data Science & AI</h3>
+                    <p class="path-description">Transform your career with comprehensive data science and AI training</p>
+                    <div class="path-stats">
+                        <span><i class="fas fa-clock"></i> 8 months</span>
+                        <span><i class="fas fa-book"></i> 15 courses</span>
+                    </div>
+                    <ul class="path-features">
+                        <li><i class="fas fa-check-circle"></i> Python Programming</li>
+                        <li><i class="fas fa-check-circle"></i> Statistical Analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Machine Learning</li>
+                        <li><i class="fas fa-check-circle"></i> Deep Learning & AI</li>
+                    </ul>
+                    <div class="path-footer">
+                        <a href="#cta" class="path-btn">Start This Path <i class="fas fa-arrow-right"></i></a>
+                        <span class="path-price">₹69,999</span>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <textarea id="message" rows="5" required></textarea>
-                    <label for="message">Message</label>
+
+                <div class="path-card reveal">
+                    <div class="path-header">
+                        <div class="path-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <span class="path-level">All Levels Welcome</span>
+                    </div>
+                    <h3>Design & Creative</h3>
+                    <p class="path-description">Become a versatile designer with our comprehensive design curriculum</p>
+                    <div class="path-stats">
+                        <span><i class="fas fa-clock"></i> 5 months</span>
+                        <span><i class="fas fa-book"></i> 10 courses</span>
+                    </div>
+                    <ul class="path-features">
+                        <li><i class="fas fa-check-circle"></i> UI/UX Fundamentals</li>
+                        <li><i class="fas fa-check-circle"></i> Visual Design</li>
+                        <li><i class="fas fa-check-circle"></i> Design Systems</li>
+                        <li><i class="fas fa-check-circle"></i> Product Design</li>
+                    </ul>
+                    <div class="path-footer">
+                        <a href="#cta" class="path-btn">Start This Path <i class="fas fa-arrow-right"></i></a>
+                        <span class="path-price">₹34,999</span>
+                    </div>
                 </div>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+
+                <div class="path-card reveal">
+                    <div class="path-header">
+                        <div class="path-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span class="path-level">Intermediate</span>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p class="path-description">Build powerful mobile applications for iOS and Android platforms</p>
+                    <div class="path-stats">
+                        <span><i class="fas fa-clock"></i> 6 months</span>
+                        <span><i class="fas fa-book"></i> 8 courses</span>
+                    </div>
+                    <ul class="path-features">
+                        <li><i class="fas fa-check-circle"></i> iOS Development</li>
+                        <li><i class="fas fa-check-circle"></i> Android Development</li>
+                        <li><i class="fas fa-check-circle"></i> Cross-platform Apps</li>
+                        <li><i class="fas fa-check-circle"></i> App Publishing</li>
+                    </ul>
+                    <div class="path-footer">
+                        <a href="#cta" class="path-btn">Start This Path <i class="fas fa-arrow-right"></i></a>
+                        <span class="path-price">₹44,999</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title reveal">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry professionals with real-world experience</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Practical Projects</h3>
+                    <p>Build your portfolio with hands-on projects and real applications</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fas fa-users"></i>
+                    <h3>Community Support</h3>
+                    <p>Join a global community of learners and mentors</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certification</h3>
+                    <p>Earn industry-recognized certificates upon completion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Transform Your Future with EdVision</h2>
+                <p>Join our community of learners and start your journey towards excellence today</p>
+                <div class="cta-buttons">
+                    <a href="https://edvision.com/signup" class="cta-button primary">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://edvision.com/demo" class="cta-button secondary">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Watch Demo</span>
+                    </a>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>7-day free trial</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cancel anytime</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 EdVision. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>EdVision</h3>
+                    <p>Empowering learners worldwide with quality education and practical skills.</p>
+                    <div class="social-links">
+                        <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                        <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                        <span class="social-icon"><i class="fab fa-linkedin-in"></i></span>
+                        <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#featured-courses">Courses</a></li>
+                        <li><a href="#learning-paths">Learning Paths</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="https://edvision.com/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="https://edvision.com/help">Help Center</a></li>
+                        <li><a href="https://edvision.com/faq">FAQs</a></li>
+                        <li><a href="https://edvision.com/contact">Contact Us</a></li>
+                        <li><a href="https://edvision.com/privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://edvision.com/community">Community</a></li>
+                        <li><a href="https://edvision.com/events">Events</a></li>
+                        <li><a href="https://edvision.com/partners">Partners</a></li>
+                        <li><a href="https://edvision.com/careers">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EdVision. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
-    <div class="loader">
-        <div class="loader-circle"></div>
-        <img src="assets/logo.png" alt="Loader Logo" class="loader-logo">
-    </div>
-
+    <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
     <script src="scripts.js"></script>
 </body>
-</html></div>
+</html>

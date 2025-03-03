@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ideaslytic - Professional consulting solutions for education, technology, and business transformation">
+    <meta name="keywords" content="consulting, education, technology, business analytics, rural development">
     <title>Ideaslytic | Where Innovation Meets Impact</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
     <!-- Loader -->
@@ -18,34 +21,67 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">
+            <a href="#" class="logo" aria-label="Ideaslytic Home">
                 <img src="assets/logo.png" alt="Ideaslytic Logo">
             </a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+            <div class="nav-wrapper">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#services" class="nav-link">
+                            Services 
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="edvision-page.html">EdVision</a></li>
+                            <li><a href="techedge-page.html">TechEdge</a></li>
+                            <li><a href="bizcatalyst-page.html">BizCatalyst</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#testimonials" class="nav-link">Success Stories</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#contact" class="nav-cta">Get Started</a>
             </div>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="video-container">
-            <video autoplay muted loop id="hero-video">
-                <source src="assets/hero-bg.mp4" type="video/mp4">
-                <source src="assets/hero-bg.webm" type="video/webm">
-                Your browser does not support HTML5 video.
-            </video>
+        <div class="hero-background">
+            <img src="assets/hero-bg.jpg" alt="Hero Background" loading="lazy">
         </div>
         <div class="container">
-            <h1>Where Innovation Meets Impact</h1>
-            <p class="tagline">Empowering growth through tailored consulting solutions</p>
-            <a href="#services" class="cta-button">Explore Our Solutions</a>
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1>Where Innovation<br>Meets Impact</h1>
+                <p class="tagline">Empowering growth through data-driven consulting solutions</p>
+                <div class="hero-cta">
+                    <a href="#services" class="cta-button primary">Explore Solutions</a>
+                    <a href="#contact" class="cta-button secondary">Schedule Consultation</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
@@ -56,15 +92,21 @@
                 <i class="fas fa-bullseye"></i>
                 <h3>Our Vision</h3>
                 <p>To empower businesses, individuals, and communities with tailored solutions that bridge the gap between potential and performance.</p>
-                <span class="value-badge">Sustainability</span>
-                <span class="value-badge">Impact</span>
+                <div class="value-badges">
+                    <span class="value-badge">Innovation</span>
+                    <span class="value-badge">Impact</span>
+                    <span class="value-badge">Sustainability</span>
+                </div>
             </div>
             <div class="mv-card reveal">
                 <i class="fas fa-rocket"></i>
                 <h3>Our Mission</h3>
                 <p>Delivering transformative consulting services across education, IT, business, and rural development for sustainable impact.</p>
-                <span class="value-badge">Innovation</span>
-                <span class="value-badge">Inclusivity</span>
+                <div class="value-badges">
+                    <span class="value-badge">Excellence</span>
+                    <span class="value-badge">Transformation</span>
+                    <span class="value-badge">Inclusivity</span>
+                </div>
             </div>
         </div>
     </section>
@@ -72,25 +114,55 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2>Our Strategic Verticals</h2>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Strategic Verticals</h2>
+                <p class="section-subtitle">Comprehensive solutions tailored to your needs</p>
+            </div>
             <div class="service-grid">
-                <div class="service-card reveal">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Ideaslytic EdVision</h3>
-                    <p>Revolutionizing education with data-driven strategies.</p>
-                    <div class="value-badge"><a href="edvision-page.html" style="text-decoration: none; color: inherit;">Analytics Driven</a></div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ideaslytic EdVision</h3>
+                        <p>Revolutionizing education through data-driven strategies and innovative learning solutions.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Learning Analytics</li>
+                            <li><i class="fas fa-check"></i> Curriculum Design</li>
+                            <li><i class="fas fa-check"></i> EdTech Integration</li>
+                        </ul>
+                        <a href="edvision-page.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <i class="fas fa-microchip"></i>
-                    <h3>Ideaslytic TechEdge</h3>
-                    <p>Cutting-edge IT solutions for competitive advantage.</p>
-                    <div class="value-badge"><a href="techedge-page.html" style="text-decoration: none; color: inherit;">Future Ready</a></div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ideaslytic TechEdge</h3>
+                        <p>Cutting-edge IT solutions that drive digital transformation and competitive advantage.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Digital Strategy</li>
+                            <li><i class="fas fa-check"></i> Cloud Solutions</li>
+                            <li><i class="fas fa-check"></i> AI Integration</li>
+                        </ul>
+                        <a href="techedge-page.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Ideaslytic BizCatalyst</h3>
-                    <p>Transformative business strategy and analytics.</p>
-                    <div class="value-badge"><a href="bizcatalyst-page.html" style="text-decoration: none; color: inherit;">Growth Focused</a></div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ideaslytic BizCatalyst</h3>
+                        <p>Strategic business consulting that drives growth through analytics and innovation.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Market Analysis</li>
+                            <li><i class="fas fa-check"></i> Growth Strategy</li>
+                            <li><i class="fas fa-check"></i> Process Optimization</li>
+                        </ul>
+                        <a href="bizcatalyst-page.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,23 +171,84 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="reveal">About Us</h2>
-            <p class="reveal">Ideaslytic is a consulting firm dedicated to driving innovation and impact through tailored solutions. Our team of experts leverages data-driven strategies to empower growth and success across various industries.</p>
-            <div class="team">
-                <div class="team-member reveal">
-                    <img src="assets/team1.jpg" alt="Team Member">
-                    <h3>Nihar Ranjan Patra</h3>
-                    <p>Founder & CEO</p>
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Ideaslytic</h2>
+                <p class="section-subtitle">Driving Innovation Through Strategic Consulting</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2>Transforming Ideas into Impactful Solutions</h2>
+                    <p>At Ideaslytic, we believe in the power of innovative thinking and data-driven strategies to transform businesses. Our team of expert consultants brings together decades of experience across education, technology, and business sectors to deliver comprehensive solutions that drive sustainable growth.</p>
+                    <p>We take pride in our ability to understand complex challenges and develop tailored solutions that create lasting impact. Our commitment to excellence and innovation has made us a trusted partner for organizations seeking transformative change.</p>
+                    <div class="about-stats">
+                        <div class="about-stat" data-aos="fade-up" data-aos-delay="200">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                        <div class="about-stat" data-aos="fade-up" data-aos-delay="300">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="about-stat" data-aos="fade-up" data-aos-delay="400">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Expert Consultants</span>
+                        </div>
+                        <div class="about-stat" data-aos="fade-up" data-aos-delay="500">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="team-member reveal">
-                    <img src="assets/team2.jpg" alt="Team Member">
-                    <h3>Dr. Bobby Patra</h3>
-                    <p>Co-Founder & CFO</p>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="assets/about-image.jpg" alt="Ideaslytic Team at Work">
                 </div>
-                <div class="team-member reveal">
-                    <img src="assets/team3.jpg" alt="Team Member">
-                    <h3>Mansha Patra</h3>
-                    <p>Co-Founder & CMO</p>
+            </div>
+
+            <div class="team-section">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Our Leadership Team</h2>
+                    <p class="section-subtitle">Meet the visionaries behind Ideaslytic</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="team-member-image">
+                            <img src="assets/team1.jpg" alt="Nihar Ranjan Patra">
+                        </div>
+                        <h3>Nihar Ranjan Patra</h3>
+                        <p class="position">Founder & CEO</p>
+                        <p>Visionary leader with 15+ years of experience in strategic consulting and business transformation.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+                        <div class="team-member-image">
+                            <img src="assets/team2.jpg" alt="Dr. Bobby Patra">
+                        </div>
+                        <h3>Dr. Bobby Patra</h3>
+                        <p class="position">Co-Founder & CFO</p>
+                        <p>Financial strategist with expertise in business analytics and operational optimization.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="600">
+                        <div class="team-member-image">
+                            <img src="assets/team3.jpg" alt="Mansha Patra">
+                        </div>
+                        <h3>Mansha Patra</h3>
+                        <p class="position">Co-Founder & CMO</p>
+                        <p>Marketing innovator specializing in digital transformation and brand strategy.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,69 +257,225 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
         <div class="container">
-            <h2 class="reveal">What Our Clients Say</h2>
-            <div class="testimonial-grid">
+            <div class="section-header">
+                <h2>Client Success Stories</h2>
+                <p class="section-subtitle">What industry leaders say about our impact</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
                 <div class="testimonial-card reveal">
-                    <p>"Ideaslytic transformed our business with their innovative solutions. Highly recommend!"</p>
-                    <h3>Michael Brown</h3>
-                    <p>CEO, TechCorp</p>
-                    <div class="value-badge">Verified Client</div>
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left testimonial-quote"></i>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Ideaslytic's strategic consulting transformed our business approach. Their innovative solutions helped us achieve a 150% growth in market reach within just 8 months."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/testimonial-1.jpg" alt="Sarah Chen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Chen</h4>
+                            <p class="position">CEO, TechVision Global</p>
+                            <img src="images/company-logo-1.png" alt="TechVision Global" class="company-logo">
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Testimonial 2 -->
                 <div class="testimonial-card reveal">
-                    <p>"Their expertise in data-driven strategies is unparalleled. Our growth has been phenomenal."</p>
-                    <h3>Sarah Wilson</h3>
-                    <p>Founder, EduInnovate</p>
-                    <div class="value-badge">Verified Client</div>
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left testimonial-quote"></i>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Working with Ideaslytic was a game-changer for our digital transformation. Their expertise in data analytics helped us optimize operations and reduce costs by 35%."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/testimonial-2.jpg" alt="Michael Rodriguez">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Rodriguez</h4>
+                            <p class="position">CTO, InnovateX Solutions</p>
+                            <img src="images/company-logo-2.png" alt="InnovateX Solutions" class="company-logo">
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Testimonial 3 -->
                 <div class="testimonial-card reveal">
-                    <p>"Professional, knowledgeable, and results-oriented. Ideaslytic is our go-to consulting firm."</p>
-                    <h3>David Lee</h3>
-                    <p>COO, BizSolutions</p>
-                    <div class="value-badge">Verified Client</div>
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left testimonial-quote"></i>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The strategic insights and market analysis provided by Ideaslytic were instrumental in our successful expansion into international markets. Truly exceptional partners."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/testimonial-3.jpg" alt="Emily Zhang">
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Zhang</h4>
+                            <p class="position">Director of Operations, GlobalTech</p>
+                            <img src="images/company-logo-3.png" alt="GlobalTech" class="company-logo">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="reveal">Contact Us</h2>
-            <form action="submit_form.php" method="post" class="reveal">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get in Touch</h2>
+                <p class="section-subtitle">Let's discuss how we can help transform your business</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Visit Us</h3>
+                        <p>123 Innovation Drive<br>Tech District, CA 94105</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Call Us</h3>
+                        <p>+1 (555) 123-4567<br>Mon - Fri, 9am - 6pm</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>info@ideaslytic.com<br>support@ideaslytic.com</p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+                <form action="submit_form.php" method="post" class="contact-form" data-aos="fade-left">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a Service</option>
+                            <option value="edvision">EdVision</option>
+                            <option value="techedge">TechEdge</option>
+                            <option value="bizcatalyst">BizCatalyst</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
-
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Ideaslytic. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#" class="footer-logo">
+                        <img src="assets/logo.png" alt="Ideaslytic Logo">
+                    </a>
+                    <p class="footer-description">Empowering businesses through innovative consulting solutions in education, technology, and business transformation.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="edvision-page.html">EdVision</a></li>
+                        <li><a href="techedge-page.html">TechEdge</a></li>
+                        <li><a href="bizcatalyst-page.html">BizCatalyst</a></li>
+                        <li><a href="#contact">Request Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with our latest insights and news.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ideaslytic. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top">
+    <button id="back-to-top" aria-label="Back to Top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="scripts.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
 </body>
-</html></button>
+</html>
