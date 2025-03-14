@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BizCatalyst | Ideaslytic</title>
+    <title>BizCatalyst | Strategic Business Solutions</title>
+    <meta name="description" content="Transform your business with BizCatalyst's expert strategies, market insights, and growth solutions.">
     <link rel="stylesheet" href="styles/bizcatalyst.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Loader -->
@@ -15,119 +17,331 @@
         <img src="assets/logo.png" alt="BizCatalyst Logo" class="loader-logo">
     </div>
 
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
                 <img src="assets/logo.png" alt="BizCatalyst Logo">
             </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="strategy.html">Strategy</a></li>
-                <li><a href="growth.html">Growth</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#strategy"><i class="fas fa-chart-line"></i>Business Strategy</a></li>
+                        <li><a href="#market-analysis"><i class="fas fa-bullseye"></i>Market Analysis</a></li>
+                        <li><a href="#growth"><i class="fas fa-rocket"></i>Growth Solutions</a></li>
+                        <li><a href="#digital"><i class="fas fa-laptop-code"></i>Digital Transformation</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn btn-primary">Get Started</a></li>
             </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
 
-    <section class="biz-hero">
+    <!-- Hero Section -->
+    <section class="biz-hero" id="home">
+        <div id="particles-js"></div>
         <div class="container">
-            <h1 class="reveal">Accelerate Your Business Growth</h1>
-            <p class="reveal">Unlock your business potential with our expert strategies and insights.</p>
-        </div>
-    </section>
-
-    <section class="biz-content">
-        <div class="container">
-            <div class="content-grid reveal">
-                <div class="content-card">
-                    <h3>Innovative Strategies</h3>
-                    <p>We provide innovative strategies to help you stay ahead of the competition.</p>
+            <div class="hero-content reveal">
+                <div class="hero-text-wrapper">
+                    <h1 class="gradient-text">Transform Your Business Vision Into Reality</h1>
+                    <p class="typing-text">Unlock unprecedented growth with our strategic insights and proven methodologies.</p>
                 </div>
-                <div class="content-card">
-                    <h3>Market Insights</h3>
-                    <p>Gain valuable insights into market trends and customer behavior.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary pulse">Schedule Consultation</a>
+                    <a href="#services" class="btn btn-outline glow">Explore Services</a>
                 </div>
-                <div class="content-card">
-                    <h3>Growth Opportunities</h3>
-                    <p>Identify and capitalize on new growth opportunities for your business.</p>
+                <div class="hero-stats">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-circle">
+                            <span class="stat-number counter" data-target="500">0</span><span>+</span>
+                        </div>
+                        <span class="stat-label">Clients Served</span>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-circle">
+                            <span class="stat-number counter" data-target="95">0</span><span>%</span>
+                        </div>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-circle">
+                            <span class="stat-number counter" data-target="2">0</span><span>B+</span>
+                        </div>
+                        <span class="stat-label">Revenue Generated</span>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrow"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="biz-services">
+    <!-- Services Section -->
+    <section class="biz-services" id="services">
         <div class="container">
-            <h2 class="reveal">Our Services</h2>
+            <div class="section-header reveal">
+                <h2 class="gradient-text">Our Strategic Solutions</h2>
+                <p>Comprehensive business solutions tailored to your unique challenges</p>
+            </div>
             <div class="services-grid reveal">
-                <div class="service-card">
-                    <i class="fas fa-chart-line"></i>
+                <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <h3>Business Strategy</h3>
-                    <p>We help you define and achieve your business goals with a clear strategy.</p>
+                    <p>Develop winning strategies that align with your business objectives and market opportunities.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Market Positioning</li>
+                        <li><i class="fas fa-check"></i> Competitive Analysis</li>
+                        <li><i class="fas fa-check"></i> Growth Planning</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-bullseye"></i>
+                <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
                     <h3>Market Analysis</h3>
-                    <p>Our market analysis services provide insights to help you make informed decisions.</p>
+                    <p>Data-driven insights to help you understand market trends and customer behavior.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Market Research</li>
+                        <li><i class="fas fa-check"></i> Consumer Insights</li>
+                        <li><i class="fas fa-check"></i> Trend Analysis</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Customer Engagement</h3>
-                    <p>Engage with your customers effectively to build lasting relationships.</p>
+                <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Growth Solutions</h3>
+                    <p>Accelerate your business growth with our proven methodologies and expertise.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Revenue Optimization</li>
+                        <li><i class="fas fa-check"></i> Market Expansion</li>
+                        <li><i class="fas fa-check"></i> Digital Transformation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="services-bg-pattern"></div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="biz-process">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our Approach</h2>
+                <p>A systematic approach to transforming your business</p>
+            </div>
+            <div class="process-grid reveal">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Discovery</h3>
+                    <p>In-depth analysis of your business needs and objectives</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Strategy</h3>
+                    <p>Developing customized solutions and action plans</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Implementation</h3>
+                    <p>Executing strategies with precision and agility</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Optimization</h3>
+                    <p>Continuous monitoring and performance enhancement</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="biz-testimonials">
+    <!-- Testimonials Section -->
+    <section class="biz-testimonials" id="testimonials">
         <div class="container">
-            <h2 class="reveal">Testimonials</h2>
-            <div class="testimonials-grid reveal">
-                <div class="testimonial-card">
-                    <p>"BizCatalyst transformed our business with their expert advice and strategies."</p>
-                    <h4>- John Doe, CEO of Company</h4>
+            <div class="section-header reveal">
+                <h2>Client Success Stories</h2>
+                <p>What our clients say about working with BizCatalyst</p>
+            </div>
+            <div class="testimonials-slider reveal">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"BizCatalyst's strategic insights helped us achieve a 200% growth in market share within 18 months."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/testimonial-1.jpg" alt="John Smith">
+                                <div class="author-info">
+                                    <h4>John Smith</h4>
+                                    <p>CEO, TechGrowth Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Their market analysis was instrumental in our successful expansion into three new markets."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/testimonial-2.jpg" alt="Sarah Johnson">
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>COO, Global Solutions Ltd.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-card">
-                    <p>"Their market analysis was spot on and helped us make the right decisions."</p>
-                    <h4>- Jane Smith, Marketing Director</h4>
-                </div>
-                <div class="testimonial-card">
-                    <p>"We saw a significant increase in customer engagement thanks to their services."</p>
-                    <h4>- Mike Johnson, Sales Manager</h4>
-                </div>
+                <div class="testimonial-controls">
+                    <button class="prev-testimonial"><i class="fas fa-arrow-left"></i></button>
+                    <div class="testimonial-dots"></div>
+                    <button class="next-testimonial"><i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="biz-contact">
+    <!-- Contact Section -->
+    <section class="biz-contact" id="contact">
         <div class="container">
-            <h2 class="reveal">Get in Touch</h2>
-            <form class="contact-form reveal">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to transform your business? Let's start a conversation.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>contact@bizcatalyst.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>123 Business Avenue, Suite 100<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+                <form class="contact-form reveal">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a Service</option>
+                            <option value="strategy">Business Strategy</option>
+                            <option value="market-analysis">Market Analysis</option>
+                            <option value="growth">Growth Solutions</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="biz-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="BizCatalyst Logo">
+                    <p>Transforming businesses through strategic innovation and growth solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#strategy">Business Strategy</a></li>
+                        <li><a href="#market-analysis">Market Analysis</a></li>
+                        <li><a href="#growth">Growth Solutions</a></li>
+                        <li><a href="#digital">Digital Transformation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for insights and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BizCatalyst. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Back to Top Button -->
     <button id="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="scripts/bizcatalyst.js"></script>
 </body>
 </html>
